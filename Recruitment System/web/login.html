@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="login.css">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="main">
+        <div class="company">
+            Best Jobs For YOU.
+        </div>
+        <div class="checkin">
+            <input type="checkbox" id="chk" aria-hidden="true">
+            <div class="signup">
+                <form name="f1" method="post" action="SignUp">
+                    <label for="chk" aria-hidden="true">Sign up</label>
+                    <input type="text" name="uname" placeholder="User name" required>
+                    <input type="email" name="email" placeholder="Email" required>
+                    <input type="password" name="pwd" placeholder="Password" required>
+                    <button>Sign up</button>
+                </form>
+            </div>
+
+            <div class="login">
+                <form name="f2" method="post" action="Login">
+                    <label for="chk" aria-hidden="true">Login</label>
+                    <select name="admin/user">
+                        <option value="user">User</option>
+                        <option value="admin">Admin</option>
+                    </select>
+                    <input type="email" name="email" placeholder="Email" required>
+                    <input type="password" name="pwd" placeholder="Password" required>
+                    <button>Login</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
